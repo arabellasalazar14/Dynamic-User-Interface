@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size:medium;
+    font-weight: normal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+#headerContainer > h1 {
+    font-size: large;
+    font-weight: bold;
+    color: #325c69;
+}
+
+#headerContainer > small {
+    font-size: medium;
+    font-weight: normal;
+    color: #2b642e;
+}
+
+#headerContainer {
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    text-align: center;
+}
+
+#formContainer {
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    text-align: justify;
+}
+
+#listContainer {
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    text-align: justify;
+}
+
+#formContainer > #studentForm > .input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+#formContainer > #studentForm > .input-field > label {
+    font-size: medium;
+    font-weight: bold;
+    color: #325c69;
+    margin-bottom: 5px;
+}
+
+#formContainer > #studentForm > .input-field > input {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #575656;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+}
+
+#formContainer > #studentForm :nth-last-child(1) > button {
+    flex-grow: 1;
+    padding: 10px 20px;
+    background-color: #325c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#formContainer > #studentForm :nth-last-child(1) > button:hover {
+    background-color: #255daa;
+    cursor: pointer;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    color: #e6f2ff;
+}
+
+#formContainer > #studentForm :nth-last-child(1) {
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#listContainer > .list-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #59e497;
+    border-radius: 5px;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    border: 2px solid #325c69;
+    margin: 15px;
+}
+
+#listContainer > .list-item h2 {
+    color: #1c3a54;
+    margin-bottom: 5px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#listContainer > .list-item p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#listContainer > .list-item > button {
+    padding: 5px 10px;
+    background-color: #325c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#listContainer > .list-item > button:hover {
+    background-color: #255daa;
+    cursor: pointer;
+    box-shadow: 5px 3px rgba(92, 85, 85, 0.5);
+    color: #e6f2ff;
+}
+
+#listContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width <= 320px) {
+    #listContainer > .list-item {
+        grid-column: span 12;
+    }
+}
+
+@media (width > 1000px) {
+    #listContainer > .list-item {
+        grid-column: span 2;
+    }
+}
+
+@media (width > 320px) and (width < 1000px) {
+    #listContainer > .list-item {
+        grid-column: span 4;
+    }
+}
