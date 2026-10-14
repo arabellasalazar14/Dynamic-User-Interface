@@ -37,6 +37,12 @@
     text-align: justify;
 }
 
+#formContainer button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #listContainer {
     margin: 30px;
     padding: 20px;
